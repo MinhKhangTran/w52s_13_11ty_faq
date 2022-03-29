@@ -1,0 +1,43 @@
+@use "sass:math";
+
+#faq {
+  background-color: white;
+  border-radius: 20px;
+  position: relative;
+  @include lg {
+    width: 920px;
+    height: 509px;
+  }
+}
+.image__wrapper {
+  position: absolute;
+  top: -58%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 237px;
+  height: 180px;
+  @include lg {
+    top: 70px;
+    left: -84px;
+    width: 472px;
+    height: 359px;
+    transform: translate(0%, 0%);
+  }
+}
+svg.box {
+  position: absolute;
+  display: none;
+  @include lg {
+    display: inline;
+    top: 135px;
+    left: -11px;
+  }
+}
+.faq__section {
+  padding-top: math.div(130rem, 16);
+  padding-inline: 1.5rem;
+  @include lg {
+    padding-left: math.div(475rem, 16);
+    padding-top: math.div(63rem, 16);
+  }
+}

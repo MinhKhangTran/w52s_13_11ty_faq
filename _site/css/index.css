@@ -38,6 +38,7 @@ html {
 /* Body */
 body {
   font-family: "Kumbh Sans", sans-serif;
+  background: linear-gradient(180deg, #af67e9 0%, #6565e7 100%);
   min-height: 100vh;
   overflow-x: hidden;
   display: grid;
@@ -180,6 +181,70 @@ ul {
 
 .bg-hover-light-grayish-blue:hover {
   background-color: #e7e7e9;
+}
+
+summary {
+  outline: none;
+  font-size: 1.15em;
+}
+
+details summary::-webkit-details-marker,
+details summary::marker {
+  display: none;
+  content: "";
+}
+
+#faq {
+  background-color: white;
+  border-radius: 20px;
+  position: relative;
+}
+@media (min-width: 960px) {
+  #faq {
+    width: 920px;
+    height: 509px;
+  }
+}
+
+.image__wrapper {
+  position: absolute;
+  top: -58%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 237px;
+  height: 180px;
+}
+@media (min-width: 960px) {
+  .image__wrapper {
+    top: 70px;
+    left: -84px;
+    width: 472px;
+    height: 359px;
+    transform: translate(0%, 0%);
+  }
+}
+
+svg.box {
+  position: absolute;
+  display: none;
+}
+@media (min-width: 960px) {
+  svg.box {
+    display: inline;
+    top: 135px;
+    left: -11px;
+  }
+}
+
+.faq__section {
+  padding-top: 8.125rem;
+  padding-inline: 1.5rem;
+}
+@media (min-width: 960px) {
+  .faq__section {
+    padding-left: 29.6875rem;
+    padding-top: 3.9375rem;
+  }
 }
 
 .d-flex {
