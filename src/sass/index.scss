@@ -1,4 +1,16 @@
-body {
-  font-family: sans-serif;
-  background-color: blue;
-}
+// variables & functions
+@import "variables";
+
+// base & layout
+@import "base";
+@import "breakpoints";
+@import "a11y";
+
+// colors
+@import "colors";
+
+// components
+@import "components/faq";
+
+// utilities
+@import "utilities";

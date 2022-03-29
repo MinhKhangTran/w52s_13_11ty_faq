@@ -1,0 +1,17 @@
+// theme
+$very-dark-desaturated-blue: hsl(238, 29%, 16%);
+$soft-red: hsl(14, 88%, 65%);
+$very-dark-grayish-blue: hsl(237, 12%, 33%);
+$dark-grayish-blue: hsl(240, 6%, 50%);
+$light-grayish-blue: hsl(240, 5%, 91%);
+
+// color palette
+$colors: (
+  "very-dark-desaturated-blue": $very-dark-desaturated-blue,
+  "soft-red": $soft-red,
+  "very-dark-grayish-blue": $very-dark-grayish-blue,
+  "dark-grayish-blue": $dark-grayish-blue,
+  "light-grayish-blue": $light-grayish-blue,
+);
+
+$transition: all 0.35s ease-in;

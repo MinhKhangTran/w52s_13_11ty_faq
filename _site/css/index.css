@@ -1,4 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset Margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body */
 body {
-  font-family: sans-serif;
-  background-color: blue;
+  font-family: "Kumbh Sans", sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+  display: grid;
+  place-items: center;
+}
+
+/* Images */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Forms */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Animation */
+@media (prefers-reduced-motion: reduce) {
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  /* added line */
+  border: 0;
+}
+
+.skip-to-content {
+  background: white;
+  color: black;
+  padding: 0.5em 1em;
+  margin-inline: auto;
+  transform: translateY(-120%);
+  transition: transform 500ms ease-in;
+  position: absolute;
+  z-index: 1000;
+}
+
+.skip-to-content:focus {
+  transform: translateY(0);
+}
+
+.text-very-dark-desaturated-blue {
+  color: #1d1e35;
+}
+
+.text-hover-very-dark-desaturated-blue:hover {
+  color: #1d1e35;
+}
+
+.bg-very-dark-desaturated-blue {
+  background-color: #1d1e35;
+}
+
+.bg-hover-very-dark-desaturated-blue:hover {
+  background-color: #1d1e35;
+}
+
+.text-soft-red {
+  color: #f47c57;
+}
+
+.text-hover-soft-red:hover {
+  color: #f47c57;
+}
+
+.bg-soft-red {
+  background-color: #f47c57;
+}
+
+.bg-hover-soft-red:hover {
+  background-color: #f47c57;
+}
+
+.text-very-dark-grayish-blue {
+  color: #4a4b5e;
+}
+
+.text-hover-very-dark-grayish-blue:hover {
+  color: #4a4b5e;
+}
+
+.bg-very-dark-grayish-blue {
+  background-color: #4a4b5e;
+}
+
+.bg-hover-very-dark-grayish-blue:hover {
+  background-color: #4a4b5e;
+}
+
+.text-dark-grayish-blue {
+  color: #787887;
+}
+
+.text-hover-dark-grayish-blue:hover {
+  color: #787887;
+}
+
+.bg-dark-grayish-blue {
+  background-color: #787887;
+}
+
+.bg-hover-dark-grayish-blue:hover {
+  background-color: #787887;
+}
+
+.text-light-grayish-blue {
+  color: #e7e7e9;
+}
+
+.text-hover-light-grayish-blue:hover {
+  color: #e7e7e9;
+}
+
+.bg-light-grayish-blue {
+  background-color: #e7e7e9;
+}
+
+.bg-hover-light-grayish-blue:hover {
+  background-color: #e7e7e9;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.justify-flex-start {
+  justify-content: flex-start;
+}
+
+.justify-flex-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.justify-space-around {
+  justify-content: space-around;
+}
+
+.rounded {
+  border-radius: 90px;
+}
+
+.container {
+  width: 90%;
+  max-width: 920px;
+  margin-inline: auto;
 }
