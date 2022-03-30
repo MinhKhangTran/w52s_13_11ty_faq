@@ -198,17 +198,18 @@ details summary::marker {
   background-color: white;
   border-radius: 20px;
   position: relative;
+  width: 100%;
 }
 @media (min-width: 960px) {
   #faq {
     width: 920px;
-    height: 509px;
+    min-height: 509px;
   }
 }
 
 .image__wrapper {
   position: absolute;
-  top: -58%;
+  top: -50%;
   left: 50%;
   transform: translate(-50%, 50%);
   width: 237px;
@@ -236,15 +237,59 @@ svg.box {
   }
 }
 
+.bg__pattern {
+  position: absolute;
+  z-index: 1000;
+  top: 7rem;
+}
+@media (min-width: 960px) {
+  .bg__pattern {
+    top: -3rem;
+  }
+}
+
 .faq__section {
   padding-top: 8.125rem;
   padding-inline: 1.5rem;
+  padding-bottom: 3rem;
 }
 @media (min-width: 960px) {
   .faq__section {
     padding-left: 29.6875rem;
     padding-top: 3.9375rem;
   }
+}
+.faq__section h2 {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+@media (min-width: 960px) {
+  .faq__section h2 {
+    text-align: left;
+    padding-bottom: 2.3125rem;
+  }
+}
+
+.accordion__item {
+  padding-bottom: 1.125rem;
+  border-bottom: solid 1px #e7e7e9;
+  padding-top: 1.0625rem;
+}
+@media (min-width: 960px) {
+  .accordion__item {
+    padding-top: 1rem;
+  }
+}
+.accordion__item:first-child {
+  padding-top: 0;
+}
+.accordion__item p {
+  padding-top: 0.6875rem;
+}
+
+main {
+  width: 90%;
+  max-width: 920px;
 }
 
 .d-flex {
@@ -295,4 +340,43 @@ svg.box {
   width: 90%;
   max-width: 920px;
   margin-inline: auto;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.heading-2 {
+  font-size: 2rem;
+}
+
+.body-fs-lg {
+  font-size: 0.875rem;
+  letter-spacing: 0.005em;
+}
+
+.body-fs-sm {
+  font-size: 0.75rem;
+  letter-spacing: 0.005em;
+  line-height: 150%;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
 }

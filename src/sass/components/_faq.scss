@@ -4,14 +4,15 @@
   background-color: white;
   border-radius: 20px;
   position: relative;
+  width: 100%;
   @include lg {
     width: 920px;
-    height: 509px;
+    min-height: 509px;
   }
 }
 .image__wrapper {
   position: absolute;
-  top: -58%;
+  top: -50%;
   left: 50%;
   transform: translate(-50%, 50%);
   width: 237px;
@@ -33,11 +34,44 @@ svg.box {
     left: -11px;
   }
 }
+.bg__pattern {
+  position: absolute;
+  z-index: 1000;
+  top: 7rem;
+  @include lg {
+    top: -3rem;
+  }
+}
 .faq__section {
   padding-top: math.div(130rem, 16);
   padding-inline: 1.5rem;
+  padding-bottom: math.div(48rem, 16);
   @include lg {
     padding-left: math.div(475rem, 16);
     padding-top: math.div(63rem, 16);
+  }
+  h2 {
+    text-align: center;
+    padding-bottom: 2rem;
+    @include lg {
+      text-align: left;
+      padding-bottom: math.div(37rem, 16);
+    }
+  }
+}
+.accordion {
+  &__item {
+    padding-bottom: math.div(18rem, 16);
+    border-bottom: solid 1px $light-grayish-blue;
+    padding-top: math.div(17rem, 16);
+    @include lg {
+      padding-top: math.div(16rem, 16);
+    }
+    &:first-child {
+      padding-top: 0;
+    }
+    & p {
+      padding-top: math.div(11rem, 16);
+    }
   }
 }

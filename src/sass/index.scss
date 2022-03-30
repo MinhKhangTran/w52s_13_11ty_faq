@@ -13,5 +13,11 @@
 @import "components/summary";
 @import "components/faq";
 
+main {
+  width: 90%;
+  max-width: 920px;
+}
+
 // utilities
 @import "utilities";
+@import "typography";

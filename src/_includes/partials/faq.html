@@ -87,16 +87,44 @@
         </filter>
       </defs>
     </svg>
-
     <!-- Box End -->
+    <!-- Background START -->
+    <div class="bg__pattern">
+      <picture>
+        <source
+          media="(min-width: 960px)"
+          srcset="/images/{{bg_image}}-desktop.svg"
+        />
+        <source
+          media="(max-width: 960px)"
+          srcset="/images/{{bg_image}}-mobile.svg"
+        />
+        <img
+          srcset="
+            /images/{{bg_image}}-desktop.svg,
+            /images/{{bg_image}}-mobile.svg
+          "
+          sizes="(min-width: 960px), (max-width: 960px)"
+          src="/images/{{bg_image}}-mobile.svg"
+          alt=""
+        />
+      </picture>
+    </div>
+    <!-- Background END -->
   </div>
   <div class="faq__section">
-    <h2>{{heading | upper}}</h2>
+    <h2 class="text-very-dark-desaturated-blue fw-700 heading-2">
+      {{heading | upper}}
+    </h2>
     <div class="accordion">
       {% for question in questions %}
       <details class="accordion__item">
-        <summary>{{question.question}}</summary>
-        <p>{{question.answer}}</p>
+        <summary class="text-very-dark-grayish-blue body-fs-lg">
+          {{question.question}}
+        </summary>
+        <p class="text-very-dark-grayish-blue body-fs-sm">
+          {{question.answer}}
+        </p>
       </details>
       {% endfor %}
     </div>

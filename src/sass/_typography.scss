@@ -1,0 +1,39 @@
+@use "sass:math";
+$weights: (
+  "400": 400,
+  "500": 500,
+  "600": 600,
+  "700": 700,
+);
+@each $key, $val in $weights {
+  .fw-#{$key} {
+    font-weight: $val;
+  }
+}
+
+$heading-fs: math.div(32rem, 16);
+$body-fs-lg: math.div(14rem, 16);
+$body-fs-sm: math.div(12rem, 16);
+
+@media (min-width: 420px) {
+  $body-fs: math.div(13rem, 16);
+}
+
+.heading-2 {
+  font-size: $heading-fs;
+}
+.body-fs-lg {
+  font-size: $body-fs-lg;
+  letter-spacing: 0.005em;
+}
+.body-fs-sm {
+  font-size: $body-fs-sm;
+  letter-spacing: 0.005em;
+  line-height: 150%;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.text-center {
+  text-align: center;
+}
