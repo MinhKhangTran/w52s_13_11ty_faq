@@ -9,6 +9,9 @@ details summary::marker {
 details[open] summary {
   font-weight: 700;
 }
+summary {
+  cursor: pointer;
+}
 
 summary:after {
   content: "";

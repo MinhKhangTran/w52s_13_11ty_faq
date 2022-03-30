@@ -193,6 +193,10 @@ details[open] summary {
   font-weight: 700;
 }
 
+summary {
+  cursor: pointer;
+}
+
 summary:after {
   content: "";
   background-image: url(../images/icon-arrow-down.svg);
