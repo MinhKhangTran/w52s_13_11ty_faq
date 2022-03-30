@@ -60,6 +60,9 @@ svg.box {
   }
 }
 .accordion {
+  @include lg {
+    width: 350px;
+  }
   &__item {
     padding-bottom: math.div(18rem, 16);
     border-bottom: solid 1px $light-grayish-blue;

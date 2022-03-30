@@ -22,6 +22,10 @@ summary:after {
   margin-top: 7px;
   width: 10px;
   height: 7px;
+  transition: 0.35s transform ease;
+  @include lg {
+    right: 100px;
+  }
 }
 
 details[open] > summary:after {
@@ -33,5 +37,8 @@ details[open] > summary:after {
   margin-top: 3px;
   width: 10px;
   height: 7px;
-  transform: rotate(180deg);
+  transform: rotate(-180deg);
+  @include lg {
+    right: 100px;
+  }
 }

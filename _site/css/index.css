@@ -206,6 +206,12 @@ summary:after {
   margin-top: 7px;
   width: 10px;
   height: 7px;
+  transition: 0.35s transform ease;
+}
+@media (min-width: 960px) {
+  summary:after {
+    right: 100px;
+  }
 }
 
 details[open] > summary:after {
@@ -217,7 +223,12 @@ details[open] > summary:after {
   margin-top: 3px;
   width: 10px;
   height: 7px;
-  transform: rotate(180deg);
+  transform: rotate(-180deg);
+}
+@media (min-width: 960px) {
+  details[open] > summary:after {
+    right: 100px;
+  }
 }
 
 #faq {
@@ -296,6 +307,11 @@ svg.box {
   }
 }
 
+@media (min-width: 960px) {
+  .accordion {
+    width: 350px;
+  }
+}
 .accordion__item {
   padding-bottom: 1.125rem;
   border-bottom: solid 1px #e7e7e9;
