@@ -11,6 +11,7 @@ details[open] summary {
 }
 summary {
   cursor: pointer;
+  transition: $transition;
 }
 
 summary:after {
