@@ -118,7 +118,7 @@
     </h2>
     <div class="accordion">
       {% for question in questions %}
-      <details class="accordion__item">
+      <details {% if question.id === "2" %}open{% endif%} class="accordion__item">
         <summary class="text-very-dark-grayish-blue body-fs-lg">
           {{question.question}}
         </summary>

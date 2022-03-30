@@ -183,15 +183,37 @@ ul {
   background-color: #e7e7e9;
 }
 
-summary {
-  outline: none;
-  font-size: 1.15em;
-}
-
 details summary::-webkit-details-marker,
 details summary::marker {
   display: none;
   content: "";
+}
+
+details[open] summary {
+  font-weight: 700;
+}
+
+summary:after {
+  content: "";
+  background-image: url(../images/icon-arrow-down.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 30px;
+  margin-top: 7px;
+  width: 10px;
+  height: 7px;
+}
+
+details[open] > summary:after {
+  content: "";
+  background-image: url(../images/icon-arrow-down.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 30px;
+  margin-top: 3px;
+  width: 10px;
+  height: 7px;
+  transform: rotate(180deg);
 }
 
 #faq {
@@ -209,7 +231,7 @@ details summary::marker {
 
 .image__wrapper {
   position: absolute;
-  top: -50%;
+  top: -35%;
   left: 50%;
   transform: translate(-50%, 50%);
   width: 237px;

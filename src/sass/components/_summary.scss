@@ -1,7 +1,4 @@
-summary {
-  outline: none;
-  font-size: 1.15em;
-}
+// https://css-tricks.com/how-to-animate-the-details-element/
 
 details summary::-webkit-details-marker,
 details summary::marker {
@@ -9,21 +6,29 @@ details summary::marker {
   content: "";
 }
 
-// summary:after {
-//   background: #da291c;
-//   border-color: #da291c;
-//   border-radius: 15px;
-//   content: "+";
-//   color: #fff;
-//   float: left;
-//   font-size: 1em;
-//   font-weight: bold;
-//   margin: -2px 10px 0 0;
-//   padding: 1px 0 3px 0;
-//   text-align: center;
-//   width: 30px;
-// }
+details[open] summary {
+  font-weight: 700;
+}
 
-// details[open] > summary:after {
-//   content: "-";
-// }
+summary:after {
+  content: "";
+  background-image: url(../images/icon-arrow-down.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 30px;
+  margin-top: 7px;
+  width: 10px;
+  height: 7px;
+}
+
+details[open] > summary:after {
+  content: "";
+  background-image: url(../images/icon-arrow-down.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 30px;
+  margin-top: 3px;
+  width: 10px;
+  height: 7px;
+  transform: rotate(180deg);
+}
